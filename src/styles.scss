@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .1s ease-out;
 }
 
 /* ============== */
@@ -61,7 +62,6 @@ nav {
     color: #fff;
     background: #3a738f;
     border-bottom: 1px solid #fff;
-    transition: all .1s ease-out;
     &:hover {
       padding-right: 2.5em;
       background: #5c9cbc;

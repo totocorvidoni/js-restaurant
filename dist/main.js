@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/page-load */ \"./src/modules/page-load.js\");\n/* harmony import */ var _modules_about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/about */ \"./src/modules/about.js\");\n\n\n\nObject(_modules_page_load__WEBPACK_IMPORTED_MODULE_0__[\"pageLoad\"])();\nObject(_modules_about__WEBPACK_IMPORTED_MODULE_1__[\"renderAbout\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/page-load */ \"./src/modules/page-load.js\");\n/* harmony import */ var _modules_about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/about */ \"./src/modules/about.js\");\n/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menu */ \"./src/modules/menu.js\");\n/* harmony import */ var _modules_contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/contact */ \"./src/modules/contact.js\");\n\n\n\n\n\nObject(_modules_page_load__WEBPACK_IMPORTED_MODULE_0__[\"pageLoad\"])();\nObject(_modules_about__WEBPACK_IMPORTED_MODULE_1__[\"renderAbout\"])();\n\nconst goTo = (renderTab) => {\n  document.querySelector('main').remove();\n  renderTab();\n}\n\nconst about = document.getElementById('about');\nconst menu = document.getElementById('menu');\nconst contact = document.getElementById('contact');\n\nabout.addEventListener('click', () => goTo(_modules_about__WEBPACK_IMPORTED_MODULE_1__[\"renderAbout\"]));\nmenu.addEventListener('click', () => goTo(_modules_menu__WEBPACK_IMPORTED_MODULE_2__[\"renderMenu\"]));\ncontact.addEventListener('click', () => goTo(_modules_contact__WEBPACK_IMPORTED_MODULE_3__[\"renderContact\"]));\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -106,7 +106,31 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderAbout\", function() { return renderAbout; });\nconst renderAbout = () => {\n  const content = document.querySelector('#content');\n  let main = document.createElement('main');\n  let heading = document.createElement('h2');\n  heading.appendChild(document.createTextNode('Pretium Sagittis'));\n  let p = document.createElement('p');\n  let text = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Non tellus orci ac auctor augue. Sit amet dictum sit amet justo donec enim diam. Morbi tincidunt augue interdum velit.');\n  p.appendChild(text);\n  main.appendChild(heading);\n  main.appendChild(p);\n  content.appendChild(main);\n}\n\n\n\n//# sourceURL=webpack:///./src/modules/about.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderAbout\", function() { return renderAbout; });\nconst renderAbout = () => {\n  const content = document.querySelector('#content');\n  let main = document.createElement('main');\n  let heading = document.createElement('h2');\n  heading.appendChild(document.createTextNode('About Us'));\n  let p = document.createElement('p');\n  let text = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Non tellus orci ac auctor augue. Sit amet dictum sit amet justo donec enim diam. Morbi tincidunt augue interdum velit.');\n  p.appendChild(text);\n  main.appendChild(heading);\n  main.appendChild(p);\n  content.appendChild(main);\n}\n\n\n\n//# sourceURL=webpack:///./src/modules/about.js?");
+
+/***/ }),
+
+/***/ "./src/modules/contact.js":
+/*!********************************!*\
+  !*** ./src/modules/contact.js ***!
+  \********************************/
+/*! exports provided: renderContact */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderContact\", function() { return renderContact; });\nconst renderContact = () => {\n  const content = document.querySelector('#content');\n  let main = document.createElement('main');\n  let heading = document.createElement('h2');\n  heading.appendChild(document.createTextNode('Contact Info'));\n  let p = document.createElement('p');\n  let text = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Non tellus orci ac auctor augue. Sit amet dictum sit amet justo donec enim diam. Morbi tincidunt augue interdum velit.');\n  p.appendChild(text);\n  main.appendChild(heading);\n  main.appendChild(p);\n  content.appendChild(main);\n}\n\n\n\n//# sourceURL=webpack:///./src/modules/contact.js?");
+
+/***/ }),
+
+/***/ "./src/modules/menu.js":
+/*!*****************************!*\
+  !*** ./src/modules/menu.js ***!
+  \*****************************/
+/*! exports provided: renderMenu */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderMenu\", function() { return renderMenu; });\nconst renderMenu = () => {\n  const content = document.querySelector('#content');\n  let main = document.createElement('main');\n  let heading = document.createElement('h2');\n  heading.appendChild(document.createTextNode('Our Menu'));\n  let p = document.createElement('p');\n  let text = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Non tellus orci ac auctor augue. Sit amet dictum sit amet justo donec enim diam. Morbi tincidunt augue interdum velit.');\n  p.appendChild(text);\n  main.appendChild(heading);\n  main.appendChild(p);\n  content.appendChild(main);\n}\n\n\n\n//# sourceURL=webpack:///./src/modules/menu.js?");
 
 /***/ }),
 
