@@ -354,6 +354,12 @@ body {
   grid-template-areas: "header header" "nav    content";
 }
 
+#content {
+  display: grid;
+  grid-template-columns: 10em 1fr;
+  grid-template-areas: "header header" "nav    content";
+}
+
 header {
   grid-area: header;
   display: grid;
@@ -400,7 +406,7 @@ nav .active:hover {
   background: #fff;
 }
 
-#content {
+main {
   grid-area: content;
   padding: 2em;
   font-size: 1.2em;
