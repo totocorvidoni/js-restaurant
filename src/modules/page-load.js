@@ -11,7 +11,7 @@ const pageLoad = () => {
   name.appendChild(document.createTextNode('Valhalla'));
   logoContainer.appendChild(name);
   let subText = document.createElement('p');
-  subText.appendChild(document.createTextNode('If you are going to eat, mind as well do it with the gods.'));
+  subText.appendChild(document.createTextNode('If you are going to eat, you might as well eat with the gods.'));
   header.appendChild(logoContainer);
   header.appendChild(subText);
   content.appendChild(header);

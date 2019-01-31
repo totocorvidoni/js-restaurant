@@ -2,19 +2,24 @@ import {pageLoad} from './modules/page-load';
 import {renderAbout} from './modules/about';
 import {renderMenu} from './modules/menu';
 import {renderContact} from './modules/contact';
+import {goToTab, setActive} from './modules/navigator.js'
 
 pageLoad();
 renderAbout();
-
-const goTo = (renderTab) => {
-  document.querySelector('main').remove();
-  renderTab();
-}
 
 const about = document.getElementById('about');
 const menu = document.getElementById('menu');
 const contact = document.getElementById('contact');
 
-about.addEventListener('click', () => goTo(renderAbout));
-menu.addEventListener('click', () => goTo(renderMenu));
-contact.addEventListener('click', () => goTo(renderContact));
+about.addEventListener('click', function() {
+  setActive(this);
+  goToTab(renderAbout);
+});
+menu.addEventListener('click', function() {
+  setActive(this);
+  goToTab(renderMenu);
+});
+contact.addEventListener('click', function() {
+  setActive(this);
+  goToTab(renderContact);
+});
