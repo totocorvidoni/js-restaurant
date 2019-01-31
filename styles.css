@@ -349,16 +349,12 @@ body {
   font-family: "Bitter", serif;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 10em 1fr;
-  grid-template-areas: "header header" "nav    content";
-}
-
 #content {
   display: grid;
   grid-template-columns: 10em 1fr;
+  grid-template-rows: 1fr 3fr;
   grid-template-areas: "header header" "nav    content";
+  height: 100vh;
 }
 
 header {
@@ -410,6 +406,7 @@ main {
   grid-area: content;
   padding: 2em;
   font-size: 1.2em;
+  max-width: 960px;
 }
 
 /*# sourceMappingURL=styles.css.map */
